@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf="8">
+     <title>Places Hover Effects</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<style>
+ body{
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: sans-serif;
+     }
+ h1{
+  font-size: 2.1rem;
+  line-height: 1.4;
+  letter-spacing:0.5rem;
+  color: #fff;
+    }
+ .maindiv{
+   width: 50%;
+   height: 300px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -20%);
+   background-image: url(background1.jpg);
+   background-size: 100% 100%;
+   box-shadow: 1px 2px 10px 5px white;
+   animation:slider 10s infinite linear;
+    }
+ @keyframes slider{
+ 0%{background-image: url(1.jpg); background-size: 100% 100%; }
+
+ 35%{background-image: url(2.jpg); background-size: 100% 100%; }
+
+ 75%{background-image: url(3.jpg); background-size: 100% 100%; }
+    }
+
+.container{
+ width: 1280px;
+ margin: 70px auto 0; 
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ margin-top: 0;
+}
+.container .box{
+ position: relative;
+ width: 300px;
+ height: 160px;
+ background: #fff;
+ margin: 10px;
+ box-sizing: border-box;
+ display: inline-block;
+}
+.container .box .imgBox{
+ position: relative;
+ overflow: hidden;
+ cursor: pointer;
+}
+.container .box .imgBox img{
+ max-width: 100%;
+ transition: transform 2s;
+}
+.container .box:hover .imgBox img{
+ transform: scale(1.2);
+}
+.container .box .details{
+ position: absolute;
+ top: 10px;
+ left: 10px;
+ bottom: 10px;
+ right: 10px;
+ background: rgba(0,0,0,.8);
+ transform: scaleY(0);
+ transition: transform .5s;
+}
+.container .box:hover .details{
+  transform: scaleY(1);
+}
+.container .box .details .content{
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+ text-align: center;
+ padding: 15px;
+ color: #fff;
+}
+.container .box .details .content h2{
+ margin: 0;
+ padding: 0;
+ font-size: 20px;
+ color: #00bcd4;
+}
+.container .box .details .content p{
+ margin: 10px 0 0;
+ padding: 0;
+}
+nav ul .cess li{
+  height: 25px;
+  display: flex;
+  font-size: 22px;
+  align-items: center;
+  padding-left: 18px;
+  margin-right: 1200px;
+  padding-right: 30px;
+  padding-top: 10px;
+  background-color: #fff;
+}
+.marq{
+  color: #333;
+ font-family: sans-serif;
+ font-size: 30px;
+}
+a{
+ text-decoration: none;
+ outline: none;
+}
+.footer-main-div{
+ width: 100%;
+ height: auto;
+ margin: auto;
+ background: #272727;
+ padding: 25px 0px;
+}
+footer-social-icons{
+ width: 100%;
+ height: auto;
+ margin: auto;
+}
+.footer-social-icons ul{
+ margin: 0px;
+ padding: 0px;
+ text-align: center;
+}
+.footer-social-icons ul li{
+ display: inline-block;
+ width: 50px;
+ height: 50px;
+ margin: 0px 10px;
+ border-radius: 100%;
+ background: aqua;
+}
+.footer-social-icons ul li:hover{
+ background: blue;
+}
+.footer-social-icons ul li:hover a{
+ color: #fff;
+}
+.footer-social-icons ul li a{
+ color: #272727;
+ font-size: 25px;
+ display: block;
+}
+.footer-social-icons ul li a i{
+ line-height: 50px; 
+}
+.footer-menu-one{
+ width: 100%;
+ height: auto;
+ margin: auto;
+ margin-top: 25px;
+}
+.footer-menu-one ul{
+ margin: 0px;
+ padding: 0px;
+ text-align: center;
+}
+.footer-menu-one ul li{
+ display: inline-block;
+ margin: 0px 15px; 
+}
+.footer-menu-one ul li a{
+ font-family: arial;
+ font-size: 15px;
+ font-weight: 600;
+ color: #fff;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+}
+.footer-menu-one ul li a:hover{
+ color: blue;
+}
+.footer-bottom{
+ width: 100%;
+ height: auto;
+ margin: auto;
+ background: aqua;
+ padding: 10px;
+}
+.footer-bottom p{
+ font-family: arial;
+ font-size: 14px;
+ text-align: center;
+ color: #333;
+ font-weight: 600;
+ letter-spacing: 1px;
+}
+.footer-bottom p a{
+ color: blue;
+}
+.footer-bottom p a:hover{
+ color: #272727;
+ 
+}
+
+  </style>
+
+
+</head>
+<body>
+<center>
+    <table border="1" width="1350">
+        <tr>
+          <td bgcolor="aqua" colspan="8">
+            <center>
+              <font color=" #333" size="40">TOURIST SPOTS OF CAGAYAN NORTH </font>
+            </center>  
+          </td>
+        </tr>
+
+         <tr>
+            <td colspan="8" background="Capture1.png">
+               <marquee direction="right">
+                   <img src="Capture2.png" height= "95">
+            </td>
+         </tr>
+</table>
+</center>
+<div class="marq">
+<marquee bgcolor="aqua" behavior="alternate">The Smiling Land Of Beauty <i class="fa fa-smile-o" aria-hidden="true"> <i class="fa fa-smile-o" aria-hidden="true"> <i class="fa fa-smile-o" aria-hidden="true"></i></i></i></marquee>
+</div>
+   <div class="container">
+       <div class="box">
+          <div class="imgBox">
+         <img src="1.jpg">
+         </div>
+          <div class="details">
+            <div class="content">
+             <h2>Pinacanauan River</h2>
+               <p>Location: Santa Ana, Cagayan Philippines</p>
+            </div>
+          </div>
+       </div>
+         <div class="box">
+         <div class="imgBox">
+         <img src="2.jpg">
+         </div>
+          <div class="details">
+            <div class="content">
+             <h2>Callao Cave</h2>
+               <p>location: peňablanca, Cagayan Philippines</p>
+            </div>
+          </div>
+       </div>
+ <div class="box">
+         <div class="imgBox">
+         <img src="3.jpg">
+         </div>
+          <div class="details">
+            <div class="content">
+             <h2>Baggao's Blue Waterfalls and Caves</h2>
+               <p>location: Water Park in Baggao, Cagayan</p>
+            </div>
+          </div>
+       </div>
+ <div class="box">
+         <div class="imgBox">
+         <img src="4.jpg">
+         </div>
+          <div class="details">
+            <div class="content">
+             <h2>Calvary Hills</h2>
+               <p>location: Iguig, Cagayan</p>
+            </div>
+          </div>
+       </div>
+ <div class="box">
+         <div class="imgBox">
+         <img src="5.jpg">
+         </div>
+          <div class="details">
+            <div class="content">
+             <h2>Palaui Island</h2>
+               <p>location: Santa Ana,Cagayan</p>
+            </div>
+          </div>
+       </div>
+ <div class="box">
+         <div class="imgBox">
+         <img src="6.jpg">
+         </div>
+          <div class="details">
+            <div class="content">
+             <h2>St. Peter's Cathedral</h2>
+               <p>location: Rizal street, Barangay Centro 10, Tuguegarao, Cagayan</p>
+            </div>
+          </div>
+       </div>
+ <div class="box">
+         <div class="imgBox">
+         <img src="7.jpg">
+         </div>
+          <div class="details">
+            <div class="content">
+             <h2>Taggat Lagoon</h2>
+               <p>location: Claveria, Cagayan</p>
+            </div>
+          </div>
+       </div>
+ <div class="box">
+         <div class="imgBox">
+         <img src="9.jpg">
+         </div>
+          <div class="details">
+            <div class="content">
+             <h2>Anguib Beach</h2>
+               <p>location: Santa Ana, Cagayan</p>
+            </div>
+          </div>
+       </div>
+ <div class="box">
+         <div class="imgBox">
+         <img src="11.jpg">
+         </div>
+          <div class="details">
+            <div class="content">
+             <h2>Bagsang Falls</h2>
+               <p>location: Santa Clara, Cagayan</p>
+            </div>
+          </div>
+       </div>
+ <div class="box">
+         <div class="imgBox">
+         <img src="12.jpg">
+         </div>
+          <div class="details">
+            <div class="content">
+             <h2>Duba Cave</h2>
+               <p>location: San Miguel, Baggao, Cagayan</p>
+            </div>
+          </div>
+       </div>
+<div class="box">
+         <div class="imgBox">
+         <img src="13.png">
+         </div>
+          <div class="details">
+            <div class="content">
+             <h2>Atulu Pottery Village</h2>
+               <p>location: Iguig, Cagayan</p>
+            </div>
+          </div>
+       </div>
+<div class="box">
+         <div class="imgBox">
+         <img src="14.png">
+         </div>
+          <div class="details">
+            <div class="content">
+             <h2>Circadian Bat Flight</h2>
+               <p>location: Peňablanca, Cagayan Philippines</p>
+            </div>
+          </div>
+       </div>
+<div class="box">
+         <div class="imgBox">
+         <img src="15.png">
+         </div>
+          <div class="details">
+            <div class="content">
+             <h2>Northern Sierra Madre Natural Park</h2>
+               <p>location: Diddadungan, Palanan, Isabela, Cagayan</p>
+            </div>
+          </div>
+       </div>
+<div class="box">
+         <div class="imgBox">
+         <img src="17.png">
+         </div>
+          <div class="details">
+            <div class="content">
+             <h2>Basilica of Our Lady of Piat</h2>
+               <p>location: Piat, Cagayan</p>
+            </div>
+          </div>
+       </div>
+<div class="box">
+         <div class="imgBox">
+         <img src="18.png">
+         </div>
+          <div class="details">
+            <div class="content">
+             <h2>Kalamudingan Falls</h2>
+               <p>location: Baggao, Cagayan</p>
+            </div>
+          </div>
+       </div>
+<div class="box">
+         <div class="imgBox">
+         <img src="19.png">
+         </div>
+          <div class="details">
+            <div class="content">
+             <h2>Malaueg Church</h2>
+               <p>location: Rizal, Cagayan</p>
+            </div>
+          </div>
+       </div>
+<div class="box">
+         <div class="imgBox">
+         <img src="20.png">
+         </div>
+          <div class="details">
+            <div class="content">
+             <h2>Nassiping Church Ruins</h2>
+               <p>Gattaran, Cagayan</p>
+            </div>
+          </div>
+       </div>
+<div class="box">
+         <div class="imgBox">
+         <img src="21.png">
+         </div>
+          <div class="details">
+            <div class="content">
+             <h2>Calayan Island</h2>
+               <p>location:Calayan, Cagayan</p>
+            </div>
+          </div>
+       </div>
+
+      </div>
+   </div>
+<br><br><br><br><br><br>
+<div class="footer-main-div">
+
+<div class="footer-social-icons">
+ <ul>
+  <li><a href="https://www.facebook.com/cagayannorth" target="blank"><i class="fa fa-facebook"></i></a></li>
+  <li><a href="https://www.twitter.com/cagayanvalley" target="blank"><i class="fa fa-twitter"></i></a></li>
+  <li><a href="http://www.cagayanvalley.com" target="blank"><i class="fa fa-google-plus"></i></a></li>
+  <li><a href="https://www.youtube.com/cagayan" target="blank"><i class="fa fa-youtube"></i></a></li>
+ </ul>
+ </ul>
+</div>
+<div class="footer-menu-one">
+ <ul>
+  <li><a href="mainp.html">Home</a></li>
+  <li><a href="foods.html">Foods</a></li>
+  <li><a href="home1.html">Products</a></li>
+  <li><a href="tourist.html">Tourist Spots</a></li>
+  <li><a href="index.html">Contact Us</a></li>
+  <li><a href="about.html">About Us</a></li>
+ </ul>
+</div>
+
+</div>
+<div class="footer-bottom">
+<p>Design By: <a href="#">Learning Tutorial Point</a></p>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
